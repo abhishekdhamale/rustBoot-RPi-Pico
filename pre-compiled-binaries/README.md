@@ -1,14 +1,14 @@
 
-##Step 1. Flash Update Firmware to Update-Firmware Partition (0x10040000)
+## Step 1. Flash Update Firmware to Update-Firmware Partition (0x10040000)
 	
  ```probe-rs-cli download --format Bin --base-address 0x10040000 --chip RP2040 rp2040_updtfw_v1235_signed.bin```
 
-##Step 2. Flash Boot Firmware to Boot-Firmware Partition (0x10020000)
+## Step 2. Flash Boot Firmware to Boot-Firmware Partition (0x10020000)
 	
  ```probe-rs-cli download --format Bin --base-address 0x10020000 --chip RP2040 rp2040_bootfw_v1234_signed.bin```
 
-##Step 3. Flash rustBoot Bootloader to Boot Partition (0x10000000)
+## Step 3. Flash rustBoot Bootloader to Boot Partition (0x10000000)
 
  ```probe-rs-cli download --format Bin --base-address 0x10000000 --chip RP2040 rp2040.bin```
 
-##Step 4. Reset Power
+## Step 4. Reset Power
